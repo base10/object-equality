@@ -6,4 +6,8 @@ class Bar
     @age  = args[:age]
     @city = args[:city]
   end
+
+  def ==(other)
+    self.name == other.name
+  end
 end
